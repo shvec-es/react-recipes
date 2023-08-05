@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FiShoppingCart, FiAlignJustify } from "react-icons/fi";
 import { Container } from "../Container/Container";
 import { MobileMenu } from "../MobileMenu/MobileMenu";
+import { ThemeSwitcher } from "../ThemeSwitcher/ThemeSwitcher";
 import styles from "./Header.module.css";
 
 export const Header = () => {
@@ -39,12 +40,7 @@ export const Header = () => {
                 className={styles.burger}
               />
             </button>
-            <div className={styles.checkbox}>
-              <label className={styles.checklabel}>
-                <input className={styles.checkinput} type="checkbox" />
-                <span className={styles.check}></span>
-              </label>
-            </div>
+            <ThemeSwitcher />
           </div>
         </div>
       </Container>

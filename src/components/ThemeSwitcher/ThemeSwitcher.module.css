@@ -1,0 +1,43 @@
+.checkbox {
+  position: relative;
+  padding: 1px;
+  display: none;
+  width: 46px;
+  height: 20px;
+  background: #cecdcd;
+  border-radius: 60px;
+}
+
+.checklabel {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.checkinput {
+  visibility: hidden;
+}
+
+.check {
+  position: absolute;
+  top: 1.6px;
+  left: 0.6px;
+  display: block;
+  width: 18.8px;
+  height: 18.8px;
+  border-radius: 50%;
+  background: #f8f8f8;
+
+  transition: transform 500ms linear;
+}
+
+.checkinput:checked + .check {
+  transform: translateX(26px);
+}
+
+@media screen and (min-width: 768px) {
+  .checkbox {
+    display: block;
+  }
+}

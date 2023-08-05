@@ -1,4 +1,5 @@
 import { AiOutlineClose } from "react-icons/ai";
+import { ThemeSwitcher } from "../ThemeSwitcher/ThemeSwitcher";
 import styles from "./MobileMenu.module.css";
 
 export const MobileMenu = ({ toggleMenu }) => {
@@ -15,6 +16,7 @@ export const MobileMenu = ({ toggleMenu }) => {
           <a href="/favorites">Favorites</a>
         </li>
       </ul>
+      <ThemeSwitcher />
     </div>
   );
 };

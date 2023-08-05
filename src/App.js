@@ -3,6 +3,7 @@ import { getAllRecipes } from "./services/api";
 import { Recipes } from "./components/AllResipes/AllRecipes";
 import { Categories } from "./components/Categories/Categories";
 import { Header } from "./components/Header/Header";
+import { Hero } from "./components/Hero/Hero";
 
 const App = () => {
   const [recipes, setRecipes] = useState([]);
@@ -23,6 +24,7 @@ const App = () => {
     <>
       <Header />
       <main>
+        <Hero />
         <Categories updateData={setRecipes} />
         <Recipes data={recipes} />
       </main>
