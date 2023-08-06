@@ -6,7 +6,7 @@ export const Recipes = ({ data }) => {
       {data.length > 0 &&
         data.map(({ _id: id, title, category, preview, thumb }) => (
           <RecipesItem
-            id={id}
+            key={id}
             title={title}
             category={category}
             preview={thumb}

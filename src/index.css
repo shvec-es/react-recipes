@@ -1,3 +1,5 @@
+@import "modern-normalize";
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -37,4 +39,24 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 7px;
+  height: 7px;
+  background: #050505;
+  border-radius: 50%;
+  opacity: inherit;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #9bb537;
 }
